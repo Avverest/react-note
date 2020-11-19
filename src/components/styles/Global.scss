@@ -1,0 +1,117 @@
+@import './Variables.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: var(--rem);
+	color: var(--text);
+	background-color: var(--bg);
+}
+
+//mixins
+@mixin asText {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin: 0;
+	font-weight: 400;
+	font-family: Noah;
+}
+
+@mixin asH1 {
+	font-size: 6rem;
+	line-height: 7rem;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 700;
+	color: var(--head);
+}
+
+@mixin asH2 {
+	font-size: 3.5rem;
+	line-height: 4rem;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 700;
+	color: var(--head);
+}
+
+@mixin asH3 {
+	font-size: 2.5rem;
+	line-height: 3rem;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 700;
+	color: var(--head);
+}
+
+@mixin asH4 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 700;
+	color: var(--head);
+}
+
+.h1, h1 {
+	@include asH1;
+}
+
+.h2, h2 {
+	@include asH2;
+}
+
+.h3, h3 {
+	@include asH3;
+}
+
+.h4, h4 {
+	@include asH4;
+}
+
+a {
+	@include asText;
+	display: inline-flex;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--link);
+	transition: all 250ms ease;
+}
+
+a:hover {
+	color: var(--hover);
+}
+
+a:active {
+	transform: translateY(2px);
+}
+
+p {
+	@include asText;
+	max-width: 900px;
+}
+
+body {
+	@include asText;
+}
+
+
+input, button {
+	outline: none;
+	border: none;
+	background: unset;
+	@include asText;
+}
+
+textarea {
+	outline: none;
+	border: none;
+	resize: none;
+	background: unset;
+	@include asText;
+}
+

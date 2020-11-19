@@ -1,0 +1,32 @@
+@import './Global';
+
+.NoteItem {
+	border: solid 1px var(--text);
+	padding: .5rem 1rem;
+	margin-top: 1rem;
+	cursor: pointer;
+	transition: all 300ms ease;
+	overflow: hidden;
+	width: 100%;
+	&:hover {
+		background-color: var(--hover);
+	}
+	&:hover > * {
+		color: var(--bg);
+	}
+	& > * {
+		pointer-events: none;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		width: 100%;
+		margin-top: .5rem;
+	}
+	& > *:first-child {
+		margin-top: 0;
+	}
+
+	&__title {
+		@include asH4;
+	}
+}

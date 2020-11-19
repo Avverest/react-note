@@ -1,0 +1,14 @@
+@import './assets/fonts/Noah/noah.css';
+@import './assets/fonts/fontawesome/css/all.css';
+
+body {
+  margin: 0;
+  font-family: Noah;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

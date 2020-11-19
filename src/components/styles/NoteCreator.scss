@@ -1,0 +1,18 @@
+.NoteCreator {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 0;
+	border: solid 1px var(--text);
+	margin-top: 1rem;
+	transition-property: color, border, background-color;
+	transition-timing-function: ease;
+	transition-duration: 300ms;
+	cursor: pointer;
+	&:hover {
+		border: solid 1px var(--hover);
+		color: var(--bg);
+		background-color: var(--hover);
+	}
+}

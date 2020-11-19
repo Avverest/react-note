@@ -1,0 +1,11 @@
+.Tools {
+	padding: 1rem;
+	&__icon {
+		font-size: 2rem;
+		transition: color 300ms ease;
+		cursor: pointer;
+		&:hover {
+			color: var(--hover);
+		}
+	}
+}

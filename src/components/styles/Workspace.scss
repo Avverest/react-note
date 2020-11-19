@@ -1,0 +1,23 @@
+@import './Global';
+
+.Workspace {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+	padding: 1rem;
+	&__content {
+		border: solid 1px var(--text);
+		padding: 1rem;
+		margin-top: 2rem;
+	}
+}
+
+.Message {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: auto;
+	& > * {
+		@include asH3;
+	}
+}
